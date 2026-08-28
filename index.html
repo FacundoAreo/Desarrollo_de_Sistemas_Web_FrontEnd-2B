@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PFO1</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome (iconos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <!-- ===== HEADER con NAV ===== -->
+    <header>
+      <div class="logo">
+        <h1>M<span>i</span> · P<span>ortafolio</span></h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#presentacion"><i class="fas fa-user"></i> Inicio</a></li>
+          <li><a href="#habilidades"><i class="fas fa-code"></i> Habilidades</a></li>
+          <li><a href="#intereses"><i class="fas fa-heart"></i> Intereses</a></li>
+          <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main>
+      <!-- SECCIÓN PRESENTACIÓN -->
+      <section id="presentacion">
+        <h2><i class="fas fa-user-astronaut" style="color:#a5834b; margin-right:10px;"></i> Presentación</h2>
+        <div class="presentacion">
+          <div class="presentacion-texto">
+            <p class="nombre">Facundo Areo <span style="nombre">Sánchez</span></p>
+            <p style="font-size:1.3rem; font-weight:300;">✨ Desarrollador web</p>
+            <p>Apasionado por el diseño funcional y la experiencia de usuario. Me encanta transformar ideas en código limpio y accesible. Actualmente explorando el universo de CSS, el ecosistema JavaScript y el uso de IA</p>
+            <p style="margin-top:0.5rem;"><i class="fas fa-map-pin" style="color:#a5834b;"></i> Buenos Aires, Argentina</p>
+            <p ><h2><i style="margin-left:350px"></i> <a  href="https://github.com/FacundoAreo/Desarrollo_de_Sistemas_Web_FrontEnd-2B">Repositorio</a></h2></p>
+          </div>
+          <div class="presentacion-foto">
+            <img src="./images/fas.jpg" alt="Foto de perfil de Facundo Areo Sánchez, programador" />
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN HABILIDADES (Grid) -->
+      <section id="habilidades">
+        <h2><i class="fas fa-cogs" style="color:#a5834b; margin-right:10px;"></i> Habilidades</h2>
+        <div class="habilidades-grid">
+          <div class="habilidad-item"><i class="fab fa-html5"></i> HTML5</div>
+          <div class="habilidad-item"><i class="fab fa-css3-alt"></i> CSS3 / Flex · Grid</div>
+          <div class="habilidad-item"><i class="fab fa-js"></i> JavaScript (ES6+)</div>
+          <div class="habilidad-item"><i class="fas fa-mobile-alt"></i> Responsive Design</div>
+          <div class="habilidad-item"><i class="fab fa-react"></i> React · Hooks</div>
+          <div class="habilidad-item"><i class="fas fa-pencil-alt"></i> UI / UX</div>
+            <div class="habilidad-item"><i class="fas fa-pencil-alt"></i> GNU/Linux</div>
+            <div class="habilidad-item"><i class="fas fa-pencil-alt"></i> Administrador de servidores</div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN PERSONAL: Intereses -->
+      <section id="intereses">
+        <h2><i class="fas fa-star" style="color:#a5834b; margin-right:10px;"></i> Más sobre mí</h2>
+        <div class="intereses">
+          <div class="interes-card">
+            <i class="fas fa-robot"></i>
+            <h4>IA & Creatividad</h4>
+            <p>Exploro cómo la IA puede potenciar el diseño web.</p>
+          </div>
+          <div class="interes-card">
+            <i class="fas fa-fish"></i>
+            <h4>Pesca</h4>
+            <p>Desconecto en la naturaleza y encuentro inspiración.</p>
+          </div>
+          <div class="interes-card">
+            <i class="fas fa-book-open"></i>
+            <h4>Lectura</h4>
+            <p>Filosofía y ciencia ficción: mi inspiracion.</p>
+          </div>
+          <div class="interes-card">
+            <i class="fas fa-person-dots-from-line"></i>
+            <h4>Familia</h4>
+            <p>Mis mejores ideas nacen con la familia de inspiracion.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN CONTACTO (formulario con labels) -->
+      <section id="contacto">
+        <h2><i class="fas fa-paper-plane" style="color:#a5834b; margin-right:10px;"></i> Contacto</h2>
+        <form class="contacto-form" action="#" method="post">
+          <div class="form-group">
+            <label for="nombre"><i class="fas fa-user"></i> Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="email"><i class="fas fa-envelope"></i> Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tú@ejemplo.com" required />
+          </div>
+          <div class="form-group">
+            <label for="mensaje"><i class="fas fa-comment-dots"></i> Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Cuéntame sobre tu proyecto..." rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn-enviar"><i class="fas fa-arrow-right"></i> Enviar mensaje</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <p>Facundo Areo Sánchez · 2026 · Hecho con HTML semántico, CSS y <i class="fas fa-heart" style="color:#d9c9a6;"></i></p>
+      <p style="font-size:0.85rem; margin-top:0.3rem;">Diseño responsive · transiciones · Google Fonts</p>
+    </footer>
+  </div>
+</body>
+</html>
